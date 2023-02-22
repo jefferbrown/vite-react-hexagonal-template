@@ -14,7 +14,22 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": "./",
+    "experimentalDecorators": true,
+    "paths": {
+      "@Components/*": ["src/ui/components/*"],
+      "@Pages/*": ["src/ui/pages/*"],
+      "@Hooks/*": ["src/ui/hooks/*"],
+      "@Layout/*": ["src/ui/layout/*"],
+      "@Styles/*": ["src/ui/styles/*"],
+      "@Utils/*": ["src/ui/utils/*"],
+      "@Constants/*": ["src/ui/constants/*"],
+      "@Domain/*": ["src/domain/*"],
+      "@Application/*": ["src/application/*"],
+      "@Infrastructure/*": ["src/infrastructure/*"],
+      "@Shared/*": ["src/shared/*"]
+    }
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
